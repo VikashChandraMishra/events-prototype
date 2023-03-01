@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Planner App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .main-btn {
+            background-color: #e68af2;
+            margin: 10px 0px;
+            padding: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md px-4" style="background-color: #e68af2;">
+        <a class="navbar-brand" style="color: white; font-weight: bold;" href="#">
+
+            <div class="logo" style="display: flex;">
+                <img src="/images/wedding-app-logo.jpg" height="50px" style="padding-left: 10px;" alt="Wedding Planner">
+                <h1 style="padding-left: 10px; font-size: 2rem;">ShadiMubarak.com</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Vendors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Venues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Packages</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" style="background-color: #734F96; border-radius: 15px; width: 100px; padding: 5px 25px;" href="/signupforms/customersignin.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="jumbotron text-center" style="
+    background-image: url('/images/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;">
+        <h1 style="color: #734F96; font-weight: bold;">Welcome to Wedding Planner App</h1>
+        <p style="color: #734F96; font-weight: bold;" class="lead">Your Dream Wedding Starts Here</p>
+        <form>
+            <label for="search"></label>
+            <input type="text" placeholder="Find the perfect venue or vendor" id="search" name="search"
+                style="width: 600px; color: #734F96; font-weight: bold;" class="form-control">
+            <a href="#"
+                style="background-color: #e68af2; margin: 10px 0px;padding: none; width: 120px; color: azure; font-weight: bold; font-size: large;"
+                class="btn">Search</a>
+        </form>
+    </section>
+
+    <!-- Popular venues section -->
+    <section class="container">
+        <h2>Popular Venues</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Grand Hotel</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate
+                            sapien sed malesuada bibendum.</p>
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Farmhouse</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate
+                            sapien sed malesuada bibendum.</p>
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Beach House</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate
+                            sapien sed malesuada bibendum.</p>
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendors section -->
+    <section class="container">
+        <h2>Top Vendors</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/200?random=1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Flower Arrangements</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/200?random=2" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Catering Services</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/200?random=3" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wedding Photography</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">View more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/200?random=4" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Planning</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages section -->
+    <section class="container">
+        <h2>Packages</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300/200?random=5" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bronze Package</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">3 hours of coverage</li>
+                            <li class="list-group-item">1 photographer</li>
+                            <li class="list-group-item">100 edited photos</li>
+                            <li class="list-group-item">Online photo gallery</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300/200?random=6" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Silver Package</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">6 hours of coverage</li>
+                            <li class="list-group-item">2 photographers</li>
+                            <li class="list-group-item">200 edited photos</li>
+                            <li class="list-group-item">Online photo gallery</li>
+                            <li class="list-group-item">1 printed album</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300/200?random=7" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gold Package</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">8 hours of coverage</li>
+                            <li class="list-group-item">2 photographers</li>
+                            <li class="list-group-item">400 edited photos</li>
+                            <li class="list-group-item">Online photo gallery</li>
+                            <li class="list-group-item">2 printed albums</li>
+                            <li class="list-group-item">1 canvas print</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn main-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="container">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, lacus ut pretium
+                            porta, nibh quam bibendum odio, non convallis mi lorem eu dolor. Maecenas lacinia eleifend
+                            euismod. Sed bibendum arcu id risus tincidunt tincidunt. Aliquam vulputate suscipit orci, in
+                            semper mauris consectetur sit amet. Nam tristique, nisi eget malesuada fringilla, mauris
+                            lectus pulvinar justo, eu hendrerit elit elit ac turpis."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/64/64?random=1" alt="...">
+                        <div class="testimonial-author-name">John Doe</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Pellentesque sed ante vitae metus commodo tincidunt vel non metus. Morbi lacinia risus sed
+                            tellus commodo, at sollicitudin nisi lobortis. Nunc ultrices mauris eu felis eleifend, eget
+                            commodo justo lacinia. Vestibulum mollis dui magna, id commodo nibh venenatis eu. Donec vel
+                            massa nisi. Sed euismod sit amet erat in bibendum. Sed sed dapibus sapien."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/64/64?random=2" alt="...">
+                        <div class="testimonial-author-name">Jane Smith</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

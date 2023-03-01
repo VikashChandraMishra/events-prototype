@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        .sidebar {
+            background-color: #734F96;
+            height: 100%;
+            position: fixed;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .services-table th,
+        .services-table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .services-table th {
+            background-color: #f2f2f2;
+        }
+
+        .services-table td:last-child {
+            text-align: right;
+        }
+
+        .services-table .btn {
+            margin: 0 5px;
+        }
+
+        .package-table th,
+        .package-table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .package-table th {
+            background-color: #f2f2f2;
+        }
+
+        .package-table td:last-child {
+            text-align: right;
+        }
+
+        .package-table .btn {
+            margin: 0 5px;
+        }
+
+        .reviews-table th,
+        .reviews-table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .reviews-table th {
+            background-color: #f2f2f2;
+        }
+
+        .review-text {
+            height: 60px;
+            overflow-y: auto;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 10px;
+        }
+
+        .review-btn {
+            margin: 5px;
+        }
+
+        .sidebar-item {
+            text-align: center;
+            border: 1px solid violet;
+            background-color: violet;
+            margin: 10px 0px;
+            border-radius: 10px;
+        }
+
+        .sidebar-item a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md px-4" style="background-color: #e68af2;">
+        <a class="navbar-brand" style="color: white; font-weight: bold;" href="#">
+
+            <div class="logo" style="display: flex;">
+                <img src="/images/wedding-app-logo.jpg" height="50px" style="padding-left: 10px;" alt="Wedding Planner">
+                <h1 style="padding-left: 10px; font-size: 2rem;">ShadiMubarak.com</h1>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Vendors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Venues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold" href="#">Packages</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light fw-bold"
+                        style="background-color: #734F96; border-radius: 15px; width: 100px; padding: 5px 25px;"
+                        href="/signupforms/customersignin.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid bg-light">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item sidebar-item">
+                        <a class="nav-link active" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item sidebar-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item sidebar-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10 main-content" id="services">
+                <h2>Services</h2>
+                <table class="table services-table">
+                    <thead>
+                        <tr class="table-h-row">
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Charges (/day)</th>
+                            <th>Image</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Photography</td>
+                            <td>We can provide at most 4 photographers per event.</td>
+                            <td>Rs.17000</td>
+                            <td>
+                                <img src="/images/photographer.jpg" width="300px" height="200px" alt="">
+                            </td>
+                            <td class="d-flex flex-column justify-content-between"
+                                style="height: 200px; padding-top: 40px;">
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Make-up</td>
+                            <td>We provide at home bridal make-up services.</td>
+                            <td>Rs.5000</td>
+                            <td>
+                                <img src="/images/makeup.webp" width="300px" height="200px" alt="">
+                            </td>
+                            <td class="d-flex flex-column justify-content-between"
+                                style="height: 200px; padding-top: 40px;">
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary">Add Service</button>
+                <hr />
+                <h2>Packages</h2>
+                <table class="table package-table">
+                    <thead>
+                        <tr>
+                            <th>Package</th>
+                            <th>Services Included</th>
+                            <th>Charges(/day)</th>
+                            <th>Image</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gold Package</td>
+                            <td>Photography, Makeup, Catering</td>
+                            <td>Rs.30000</td>
+                            <td>
+                                <img src="/images/photographer.jpg" width="300px" height="200px" alt="">
+                            </td>
+                            <td>
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Silver Package</td>
+                            <td>Photography, Makeup</td>
+                            <td>Rs.16000</td>
+                            <td>
+                                <img src="/images/photographer.jpg" width="300px" height="200px" alt="">
+                            </td>
+                            <td>
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bronze Package</td>
+                            <td>Photography</td>
+                            <td>Rs.13000</td>
+                            <td>
+                                <img src="/images/photographer.jpg" width="300px" height="200px" alt="">
+                            </td>
+                            <td>
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary">Add Package</button>
+                <hr />
+
+                <h2>Bookings</h2>
+                <table class="table package-table">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Services Requested</th>
+                            <th>Package Requested</th>
+                            <th>Status</th>
+                            <th>Billing Amount</th>
+                            <th>Balance</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vix</td>
+                            <td>Photography, Makeup</td>
+                            <td>N/A</td>
+                            <td>Pending</td>
+                            <td>Rs.16000</td>
+                            <td>N/A</td>
+                            <td>
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rohan</td>
+                            <td>N/A</td>
+                            <td>Silver Package</td>
+                            <td>Accepted</td>
+                            <td>Rs.16000</td>
+                            <td>Rs.16000</td>
+                            <td>
+                                <button class="btn btn-info"><i class="fa fa-pencil"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary">Add Package</button>
+                <hr />
+                <h2>Reviews</h2>
+                <table class="table reviews-table">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Service</th>
+                            <th>Rating</th>
+                            <th>Review</th>
+                            <th>Reply</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Photography</td>
+                            <td>4/5</td>
+                            <td class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco."</td>
+                            <td>
+                                <button class="btn btn-primary review-btn">Reply</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>Photography</td>
+                            <td>3/5</td>
+                            <td class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco."</td>
+                            <td>
+                                <button class="btn btn-primary review-btn">Reply</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
